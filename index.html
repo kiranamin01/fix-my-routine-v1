@@ -3,79 +3,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <!-- Font Awesome cdn css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Fix-Your-Routine</title>
     <link rel="stylesheet" href="style.css">
+    
+    <title>Fix-Your-Routine</title>
 
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <!-- Font Awesome cdn css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+     <!-- LINK CSS -->
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="header-containers">
-        <div class="header-nav">
-            <div class="header-left">
-                <div class="logo">
-                    <img src="./images/icons/edit.png" alt="Logo"> <h4>Fix-Your<span class="auto-type">-Routine</span></h4>
+    <header id="header_containers">
+        <nav class="nav">
+            <div class="nav_left">
+                <ul class="nav_left_ul">
+                    <li class="nav_left_ul_li"> <a href="#">Routine </a> </li>
+                    <li class="nav_left_ul_li"> <a href="#">Habits </a> </li>
+                    <li class="nav_left_ul_li"> <a href="#">Task Manager </a> </li>
+                    <li class="nav_left_ul_li"> <a href="#"> Reminders </a> </li>
+                </ul>
+                
+            </div>
+            <div class="nav_middle">
+                <div id="logo">
+                    <img id="nav_logo" 
+                    src="./images/icons/edit.png" alt="Logo">
+                     <h4>Fix-Your<span class="auto-type">-Routine</span></h4>
                 </div>
             </div>
-            <div class="header-middle">
-                <div class="header-m-nav">
-                    <ul>
-                        <li><a href="#"></a> Routine</li>
-                        <li> <a href="#"></a> Habits</li>
-                        <li> <a href="#"></a> Free-Guide</li>
-                        <li> <a href="#"></a> About US</li>
-                    </ul>
+            <div id="nav_right">
+                <ul>
+                    <li> <a href="#"></a> Free-Guide</li>
+                    <li> <a href="#"></a> About US</li>
+                </ul>
+                  <!-- <button>Sign in</button> -->
+                    <button id="sign_up_btn">Sign up</button>
                 </div>
-            </div>
-            <div class="header-right">
-                  <button>Sign in</button>
-                  <div class="SIGN-UP-btn">
-                    <button>Sign up</button></div>
             </div>
 
           
+        </nav>
+
+
+    </header>
+
+    <section id="hero">
+        <h1 id="hero_h1">" Nothing is less productive than to make more efficient .... "" <br>
+             </h1>
+             <h1 id="hero_h1_name">- Peter Brucker </h1>
+            <h2 id="hero_h2">Easily handle Your Tasks , make notes of important information , and keep track of your Task Lists </h2>
+        <div id="hero_btn_cont">
+            <button id="hero_btn">Start for Free</button>
         </div>
-
-
     </section>
-    <section class="hero-containers">
-        <div class="hero-container-left"><h1>Your-Today-Task-List</h1>
-            <div class="task-container">
-                <form action="">
-                    <input type="text" class="to-do-input">
-                    <button class="to-do-add-btn" type="submit">
-                        <img class="add-btn" src="./images/icons/add.png" alt="">
-                    </button>
-                    <div class="select">
-                        <select name="to-dos" id="" class="filter-todo">
-                            <option value="all">All</option>
-                            <option value="completed">Completed</option>
-                            <option value="incompleted">InCompleted</option>
-                        </select>
-                    </div>
-                </form>
-                <div class="my-task-box">
-                     <ul class="to-do-list">
 
+    <section id="page2">
+        <div id="page2_cont">
+            <div id="page2_cont_left">
+                <h1>Effortlessly manage tasks and <br>stay organized</h1>
+            </div>
+            <div id="page2_cont_right">
+                <h2>Our app is designed to help you stay on top of your tasks, notes, and to-do lists. <br>With email reminders and music control, you can easily prioritize and complete <br>your daily tasks. Stay organized and never miss a deadline again.</h2>
 
-                     </ul>
-
-                </div>
+                <button id="page2_cont_r"> <h5>Learn More</h5></button>
 
             </div>
         </div>
-        <div class="hero-container-right">CLOCK</div>
-
     </section>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- JSS SCRIPTS  -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
     <script src="script.js"></script>
+    <script src="pratice.js"></script>
 
     <script>
         var typed = new Typed(".auto-type",{
@@ -85,6 +91,5 @@
             loop:true,
         })
     </script>
-
 </body>
 </html>
