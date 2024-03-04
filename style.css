@@ -7,6 +7,11 @@
     font-family: Poppins,sans-serif;
 }
 
+html,body {
+    width: 100vw;
+    height: 100vh;
+}
+
 :root {
     --blue: #1e90ff;
     --white: #ffffff;
@@ -99,23 +104,25 @@
     height: 84%;
     background: var(--notepad);
 
-    padding:  15rem 20rem 0rem 20rem;
+    padding:  15rem 24rem 0rem 26rem;
 
     justify-content: center;
     align-items: center;
     border-color: 2px solid black;
 
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     
 
 }
 
 #hero_h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
+    line-height: 4.5rem;
 }
 
 #hero_h2 {
     font-size: 1.2rem;
+    padding: 1rem;
 
 }
 
@@ -150,39 +157,115 @@
     width: 100%;
     height: 40%;
     /* background-color: #000; */
+    border: 1px solid rgb(219, 211, 211);
+    padding: 1.8rem;
 }
 
 #page2_cont {
-    width: 100%;
-    height: 80vh;
+    /* width: 100%; */
+    /* height: 80vh; */
     /* background-color: #755757; */
 
     display: flex;
+    /* border: 1px solid gray; */
+    justify-content: center;
+    align-items: center;
 }
 
 #page2_cont_left {
     /* background-color: red; */
     width: 50%;
-    height: 30vh;
+    height: 25vh;
 
-    padding: 2.5rem;
+    padding: 2.8rem;
 }
 
 #page2_cont_right {
     /* background-color: blue; */
     width: 50%;
-    height: 30vh;
+    height: 25vh;
 
-    padding: 1rem;
+    padding: 2rem;
+    /* background: black; */
 }
 
 #page2_cont_left > h1 {
     font-size: 2.8rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
 
 }
 
 #page2_cont_right > h2 {
     font-size: 1.3rem;
+    color: rgb(79, 79, 79);
 
+}
+
+#page2_btn {
+    padding: 10px 12px;
+    margin: 25px;
+    background-color: #fff;
+}
+
+#page2_btn > h5 {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 200;
+    
+}
+
+/* _______________________ PAGE 3 & 2nd _______________________ */
+
+#page3 {
+    width: 100%;
+    height: 50%;
+    /* background-color: #4B98A3; */
+     display: flex;
+}
+
+#page3_left {
+    width: 45%;
+    /* background-color: blue; */
+    height: 100%;
+
+   padding: 5rem 6rem 6rem 3rem;
+   margin-left: 5rem;
+}
+
+.page3_l_red-h3 {
+    color: var(--GentleYellow);
+    margin-left: 4.8rem;
+    -webkit-text-stroke-color: black;
+}
+
+.page3_l_h1 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    font-family: sans-serif;
+    margin: 2.3rem 0rem;
+    margin-left: 5rem;
+}
+
+.page3_l_p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: sans-serif;
+    margin-left: 5rem;
+    color: gray;
+}
+
+/* ----------page3 right side ---------*/
+
+#page3_right {
+    width: 55%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+
+/* _________________________ PAGE 3 IMG ________________ */
+
+#page3_right > img {
+    width: 800px;
+    height: 500px;
 }
