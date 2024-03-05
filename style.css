@@ -8,8 +8,8 @@
 }
 
 html,body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 :root {
@@ -27,18 +27,28 @@ html,body {
 
 }
 
-/* HEADER / NAV  */
+/* ----------------- HEADER / NAV -----------------------------------  */
 
 #header_containers {
     width: 100%;
-    background-color: var(--notepad);
     height: 5rem;
+
+    background-color: var(--notepad);
+    /* background-color: red; */
+
+    position: relative;
 }
 .nav{
+    width: 100%;
+    height: 5rem;
+
+    position: absolute;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    /* background-color: #00FFFF; */
 }
 .nav,.nav_left,.nav_middle,#nav_right {
     display: flex;
@@ -97,6 +107,30 @@ html,body {
 
 }
 
+@media (max-width:600px) {   
+    .nav {
+        /* display: none; */
+    }
+    #nav_l_menu {
+        display: block;
+        font-size: 30px;
+    }
+    .nav_left_ul_li {
+        display: none;
+
+    }
+    #nav_right ul li {
+        display: none;
+    }
+
+    #sign_up_btn {
+        padding: 30px 30px ;
+        font-size: 16px;
+        width: 6rem;
+        height: 2.5rem;
+
+    }
+}
 /* ---------------- HERO SECTIONS ----------------------------- */
 
 #hero {
@@ -128,8 +162,8 @@ html,body {
 
 #hero_btn {
     background-color: var(--GentleYellow);
-    padding: 8px;
-    border-radius: 12px;
+    padding: 12px;
+    border-radius: 8px;
     color: black;
     border-color: var(--AccentTeal);
 
@@ -149,6 +183,40 @@ html,body {
 #hero_h1_name {
     margin-left: 38rem;
     font-size: 3.5rem;
+}
+
+@media (max-width:600px) {  
+    #hero {
+        width: 100vw;
+        height: calc (100% - 100vh);
+
+        /* border: 2px solid red ; */
+
+        padding: 6rem 4rem 9rem 4rem;
+    }
+
+    #hero_h1 {
+        font-size: 3.4rem;
+        line-height: 3.8rem;
+    }
+
+    #hero_h1_name {
+        margin-top: 1rem;
+        margin-left: 18rem;
+        font-size: 1.5em;
+    }
+
+    #hero_h2 {
+        font-size: 1.2rem;
+        padding: 1rem;
+        margin: 0.5rem;
+        margin-top: 2rem;
+    
+    }
+
+    #hero_btn_cont {
+        padding-top: 40px;
+    }
 }
 
 /* ------------------ PAGE 2 ----------------------------------- */
@@ -214,6 +282,75 @@ html,body {
     
 }
 
+@media screen {
+    #page2{
+        width: 100%;
+        height: 30%;
+        /* background-color: #000; */
+        border: 1px solid rgb(219, 211, 211);
+        padding: 1rem;
+    }
+
+    #page2_cont_left {
+        /* background-color: red; */
+        width: 50%;
+        height: 22vh;
+    
+        padding: 1.5rem;
+    }
+
+    #page2_cont_left > h1 {
+        font-size: 1.8rem;
+        font-family: sans-serif;
+    
+    }
+    #page2_cont_right {
+        /* background-color: blue; */
+        width: 50%;
+        height: 25vh;
+    
+        padding: 1.2rem;
+        /* background: black; */
+    }
+
+    #page2_cont_right > h2 {
+        font-size: 0.8rem;
+        color: rgb(79, 79, 79);
+    
+    }
+}
+    #page2_inspired{
+        width: 100%;
+        padding-left:38rem;
+
+        /* background-color: yellow; */
+        /* display: flex;
+        justify-items: center;
+        align-items: center; */
+    }
+    #page2_insp p {
+        width: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .page2_insp_img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-items: center;
+
+    }   
+    .page2_insp_img img {
+        width: 80px;
+        height: 70px;
+
+        margin: 20px;
+        
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+    }
 /* _______________________ PAGE 3 & 2nd _______________________ */
 
 #page3 {
@@ -262,10 +399,72 @@ html,body {
     /* background-color: red; */
 }
 
+@media (max-width:600px) {    
+    
+    #page3_left {
+        padding:0;
+       margin-left: 0rem;
+
+       width: 55%;
+    }
+    .page3_l_red-h3 {
+        color: var(--GentleYellow);
+        margin-left: 1.9rem;
+        margin-top: 2rem;
+        -webkit-text-stroke-color: black;
+    }
+    .page3_l_h1 {
+        font-size: 2.1rem;
+        line-height: 2.2rem;
+        font-family: sans-serif;
+        margin: 1.3rem 0rem;
+        margin-left: 2rem;
+    }
+    
+    .page3_l_p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        font-family: sans-serif;
+        margin-left: 2rem;
+        color: gray;
+    }
+    /* -------- RIGHT --------------- */
+    #page3_right {
+        width: 45%;
+        height: 480px;
+        /* background-color: black; */
+    }
+
+    /* --- break line --------- */
+
+    .page3_l_h1 br {
+        display: none;
+    }
+    .page3_l_p br {
+        display: none;
+    }
+}
 
 /* _________________________ PAGE 3 IMG ________________ */
 
 #page3_right > img {
     width: 800px;
     height: 500px;
+}
+
+@media (max-width:600px) {    
+    #page3_right > img {
+        /* display: none; */
+        width: 280px;
+        height: 480px;
+        object-fit: content;
+        padding: 10px;
+    }
+
+}
+@media(max-width:600px) {
+    #page3_r_img {
+        object-fit:cover;
+    }
+
 }
